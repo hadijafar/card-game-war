@@ -1,4 +1,5 @@
 defmodule WarTest do
+
   use ExUnit.Case
   doctest War
 
