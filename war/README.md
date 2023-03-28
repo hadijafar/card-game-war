@@ -1,17 +1,18 @@
-# War
+# Card Game War
 
-**TODO: Add description**
+This project takes a list of 52 numbers and plays out the [card game war](https://www.wikihow.com/Play-War-(Card-Game)). Once the card game is completed, the code returns the winners deck as a list to show how the game played out.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `war` to your list of dependencies in `mix.exs`:
+Install elixir onto your computer by visiting the [website](https://elixir-lang.org/install.html).
 
-```elixir
-def deps do
-  [
-    {:war, "~> 0.1.0"}
-  ]
-end
-```
+Once installed:
+  1. navigate into the war folder
+  2. run `mix test` in the terminal
+  3. watch the code pass the test cases
+
+## Try adding more test cases!!
+
+Try adding some more test cases and see how the game plays out
+
 
