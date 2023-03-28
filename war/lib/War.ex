@@ -67,8 +67,7 @@ defmodule War do
   def warBattle(hand1,[], holder), do: {hand1 ++ Enum.sort(holder, :desc), []}
 
   #checks for edge cases when the player does not have enough cards to complete a war, so remove cards from both players until one is empty
-  def warBattle(hand1, hand2, holder) when (length(hand2) == 2 or length(hand1) == 2) and length(holder)==0, do: warBattle(tl(tl(hand1)), tl(tl(hand2)), holder ++ [hd(hand1)] ++ [hd(hand2)] ++ [hd(tl(hand1))] ++ [hd(tl(hand2))])
-  def warBattle(hand1, hand2, holder) when (length(hand1) < 3 or length(hand2) < 3) and length(holder)==0, do: warBattle(tl(hand1), tl(hand2), holder ++ [hd(hand1)] ++ [hd(hand2)])
+  def warBattle(hand1, hand2, holder) when (length(hand2) < 2 or length(hand1) < 2) and length(holder) < 3, do: warBattle(tl(hand1), tl(hand2), holder ++ [hd(hand1)] ++ [hd(hand2)])
 
   #actually plays the war part of the game
   #holder represents all the cards used in the war
