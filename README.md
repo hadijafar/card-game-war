@@ -3,3 +3,9 @@ This project takes 52 numbers and plays out the [card game war](https://www.wiki
 # Installation
 
 Please look within each language folder to find out how to install the language and run the code.
+
+# Languages so far
+
+So far the game has been made in:
+- elixir
+- haskell
