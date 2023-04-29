@@ -9,3 +9,4 @@ Please look within each language folder to find out how to install the language 
 So far the game has been made in:
 - elixir
 - haskell
+- rust
